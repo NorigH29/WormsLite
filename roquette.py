@@ -10,13 +10,12 @@ class Roquette(object):
 
 
     def tir(self,angle,power):
-        t=0
-        x=cos(angle*pi/180)*power*t
-        y=-1/2*9.81*pow(t,2)+sin(angle*pi/180)*power*t
+        self.t=0
+        self.x=cos(angle*pi/180)*power*self.t
+        self.y=-1/2*9.81*pow(t,2)+sin(angle*pi/180)*power*self.t
         self.parent.move
-
+        print("entre x et y")
 
     def destroy(self):
-        print("destruction dela roquette")
         self.parent.delete(self.r)
         
