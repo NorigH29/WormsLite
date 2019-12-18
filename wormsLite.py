@@ -29,9 +29,12 @@ roquette1= Roquette(can,125,150,'red')
 
 
 btn_tir1 = Button(f,text="tire",command=create_roquette1)
-btn_supr1 = Button(f,text="suprimer",command=destroy_roquette1)
-
 btn_tir1.pack(side=LEFT,pady =14,padx =20)
-btn_supr1.pack(side=RIGHT,pady =14,padx =20)
+
+btn_tir2 = Button(f,text="tire",command=create_roquette1)
+btn_tir2.pack(side=RIGHT,pady =14,padx =20)
+
+btn_supr = Button(f,text="suprimer",command=destroy_roquette1)
+btn_supr.pack(side=BOTTOM,pady =14,padx =20)
 
 f.mainloop()

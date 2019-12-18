@@ -18,6 +18,7 @@ class Bazooka(object):
         r = 15                      # rayon du cercle
         boss.create_oval(x-r, y-r, x+r, y+r, fill='blue', width =3)
 
+
     def orienter(self, angle):
             "choisir l'angle de tir du canon"
             # rem : le paramètre <angle> est reçu en tant que chaîne de car.
@@ -26,6 +27,3 @@ class Bazooka(object):
             self.x2 = self.x1 + self.lbu*cos(self.angle)
             self.y2 = self.y1 - self.lbu*sin(self.angle)
             self.boss.coords(self.buse, self.x1, self.y1, self.x2, self.y2)
-
-
-
