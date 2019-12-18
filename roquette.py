@@ -8,5 +8,6 @@ class Roquette(object):
         self.y=y
         self.r=self.parent.create_oval(self.x-5,self.y-5,self.x+5,self.y+5,fill=coul)
     def destroy(self):
+        print("destruction dela roquette")
         self.parent.delete(self.r)
         
